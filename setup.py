@@ -12,9 +12,13 @@ DATA_FILES = ['data.json']
 OPTIONS = {
     'iconfile': 'icon.icns',
     'plist': {
-        'CFBundleName': 'srt_zh',  # 应用名
-        'CFBundleDisplayName': 'srt_zh',  # 应用显示名
-    }
+        'CFBundleName': 'srt_zh',
+        'CFBundleDisplayName': 'srt_zh',
+    },
+    'includes': ['deepl', 'customtkinter', 'tkinterdnd2', 'requests', 'cffi', 'pyopenssl', 'charset-normalizer',
+                 'openssl'],
+    'packages': ['requests'],
+    'argv_emulation': False
 }
 
 setup(
