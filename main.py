@@ -6,7 +6,6 @@ import json
 from tkinter import *
 from tkinterdnd2 import *
 
-auth_key = ''
 translator = None
 progress = 0
 total = 0
@@ -80,7 +79,9 @@ def translate_srt(path):
 def get_path(event):
     global isRunning
     global has_key
+    global progress
     if event.data.endswith('.srt') & isRunning is False & has_key:
+        progress = 0
         url = event.data
         t = threading.Thread(target=translate_srt, args=(url,), daemon=True)
         t.start()
