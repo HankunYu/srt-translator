@@ -4,7 +4,6 @@
 need a api key from https://www.deepl.com/ for free
 
 
-
 Todo
 
 - [ ] more option for different language
